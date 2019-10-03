@@ -1,0 +1,19 @@
+---
+title: "Sampling Data"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(googlesheets4)
+
+sheets_deauth()
+sample_data <- read_sheet("1cgP-e6THVfiW5TJ95QhX3jkNxKvc8Sicp9k_BkSRd2I")
+```
+
+```{r}
+
+```
+
