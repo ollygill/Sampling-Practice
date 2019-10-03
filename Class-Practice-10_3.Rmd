@@ -1,0 +1,24 @@
+---
+title: "Class_10_3 - Olly Gill"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+library(tidyverse)
+library(googlesheets4)
+```
+
+
+```{r}
+my_cold_call <- function() {
+  sheets_deauth()
+  x <- read_sheet("1LtupNx8yBeJzK6UyGkZ5u-aUAPzU90K9C4r2RTJwWqg")
+  x %>%
+    select(Student) %>%
+    sample_n(1) %>%
+    pull(Student)
+}
+```
+
